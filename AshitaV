@@ -1,0 +1,12 @@
+#To visualize arrays x and y in a separate window
+
+par(mfrow=c(2,2))
+x <- c (1, 2, 3, 4, 5)
+y <- c (1, 5, 3, 2, 0)
+windows()
+par(mfrow=c(2,1))
+plot (x, y, main="Top Left")
+plot (x, y, 
+      main="Top Right",
+      type="b")
+par(mfrow=c(1,1))
